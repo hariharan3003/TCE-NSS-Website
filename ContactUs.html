@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSS | TCE</title>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/footer.css"/>
+	<script type="text/javascript">
+		#success_message{ display: none;}
+	</script>
+	<script type="text/javascript" src="js/formValidation.js"></script>
+</head>
+<body>
+
+<header class="container">
+	<div class="row">
+    <img class="col-sm-6" src="image/TCE_NSS_Logo.png" alt="TCE_NSS_Logo" usemap="#logomap">
+    <map name="logomap">
+      <area shape="rect" coords="0,0,90,90" href="index.html" alt="NSS">
+      <area shape="rect" coords="500,0,560,90" href="http://tce.edu" alt="TCE">
+    </map>
+		<nav class="col-sm-6 navbar-static-top">
+        <a href="index.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">Home</a>
+        <a href="Objectives.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">Objectives</a>
+        <a href="Activities.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">Activities</a>
+        <a href="News.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">News</a>
+        <a href="Gallery.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">Gallery</a>
+        <a href="ContactUs2.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">ContactUs</a> 
+        <a href="LogIn.html" onmouseover="enlarge(this)" onmouseout="shrink(this)">LogIn</a>
+        <script type="text/javascript">
+          function enlarge(x){
+            x.style.fontSize="20px";
+          }
+          function shrink(x){
+            x.style.fontSize="15px";
+          }
+        </script>
+    </nav>
+    <hr>
+	</div>
+  <hr style="background:#F87431; border:0; height:7px" />
+</header>
+
+
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<h2 align="center">Feedback Form</h2>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="uname" placeholder="Gokul Karthik K" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="example@domain.com" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone #</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(+91)9876543210" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Profession</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="profession" class="form-control selectpicker" >
+      <option value=" " >Please select your profession</option>
+      <option >Student</option>
+      <option >Faculty</option>
+      <option >Social Worker</option>
+      <option >Others</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Organisation</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="organisation" placeholder="TCE Madurai" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+
+
+<!-- Text area -->
+  
+<div class="form-group">
+  <label class="col-md-4 control-label">Feedback</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="feedback" placeholder="Write your feedback here."></textarea>
+  </div>
+  </div>
+</div>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+
+
+<!Footer-->
+<br><br>
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="mendi-social-networks">
+
+      <li class="copyright">
+      <a href="" title="" target="blank_">
+        <p>Developed by GoTech!</p>
+        <span class="followers">&copy; TCE Madurai</span>
+      </a>
+      </li>
+
+      <li class="facebook">
+      <a href="https://www.facebook.com/National-Service-Scheme-TCE-677444149072063/" title="" target="blank_">
+        <p>JOIN US ON FACEBOOK</p>
+        <span class="followers">500+ Followers</span>
+      </a>
+      </li>
+
+      <li class="tce">
+      <a href="http://tce.edu" title="" target="blank_">
+        <p>TCE Madurai</p>
+        <span class="followers">A Temple of Learning</span>
+      </a>
+      </li>
+
+      <li class="linkedin">
+      <a href="" title="" target="blank_">
+        <p>CONNECT ON LINKEDIN</p>
+        <span class="followers">Know about our Volunteers</span>
+      </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
+	
