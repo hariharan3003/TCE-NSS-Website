@@ -1,4 +1,5 @@
 <?php
+require('config.php');
 // define variables and set to empty values
 $nameErr = $emailErrm= "";
 $name = $email  = "";
@@ -44,4 +45,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
 }
+
+extract($_POST);
+$con=mysqli_connect($svr,$usr,$pwd,$db);
+$sql="INSERT INTO feedback VALUES ('$textinput','$profession','$organisation','$mail','$feedback')";
+$d=mysqli_query($con,$sql);
+if($d){
+	echo"<center><h1>DONE!!!</h1></center>";
+}
+else{
+	echo"ERROR!!!";
+}
+
 ?>
